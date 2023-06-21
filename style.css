@@ -4,4 +4,87 @@
         margin: 0;
         padding: 0;
     }
+
+    a{
+        font-family: inherit;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .navbar{
+        padding: 2rem;
+    }
+
+
+    .brand-name{
+        font-family: syne;
+        font-size: 2rem;
+    }
+
+    .navbar-left{
+        display: flex;
+        /* padding: 2rem 2.5rem; */
+        justify-content: space-between;
+    }
+
+    .navbar ul{
+        text-align: center;
+        line-height: 2rem;
+        padding: 2rem 0rem;
+        list-style: none;
+        font-family: sans-serif;
+    }
+
+    /* theme buttons */
+
+    .navbar-button{
+        padding: 3rem 0rem 0rem 0rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .no-bg{
+        background: none;
+        color: white;
+        padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+        border-radius: 0.2rem;
+        border: 2px solid white;
+        box-shadow: 3px 3px;
+    }
+
+    .navbar-button .nrml{
+        padding: 0.6rem 1rem;
+        font-size: 1.2rem;
+        border-radius: 0.2rem;
+        border: 2px solid whitesmoke;
+        box-shadow: 3px 3px blue;
+    }
+
+    
+
+    /* hamburger icons */
+
+    #hamburger-open button{
+        background: none;
+        border: none;
+        padding: 0.1rem 0rem 0rem;
+        display: flex;
+    }
+
+    #hamburger-close{
+        display: none;
+    }
+    
+    #hamburger-close{
+        /* display: none; */
+        background: none;
+        border: none;
+        padding: 0.1rem 0rem 0rem;
+    }
+
+    .navbar-right{
+        display: none;
+    }
 }

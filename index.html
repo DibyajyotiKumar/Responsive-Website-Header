@@ -1,24 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Responsive Header - Hamburger Menu</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body id="body">
     <header>
-        <nav>
-            <div class="brand-name">
-                Your Brand
+        <nav class="navbar" id="navbar">
+            <div class="navbar-left">
+                <div class="brand-name">
+                    Your Brand
+                </div>
+
+                <div>
+                    <button id="hamburger-close" onclick="hamclose()">
+                        <img src="icons/hamburger-close.svg" alt="">
+                    </button>
+                </div>
+
+                <div id="hamburger-open">
+                    <button onclick="hamopen()">
+                        <img src="icons/hamburger.svg" alt="">
+                    </button>
+                </div>
+                <!--  -->
             </div>
-            <ul>
-                <li><a href="#">First Link</a></li>
-                <li><a href="#">First Link</a></li>
-                <li><a href="#">First Link</a></li>
-                <li><a href="#">First Link</a></li>
-            </ul>
+            <div class="navbar-right" id="navbar-menu">
+                <ul>
+                    <li><a href="#">First Link</a></li>
+                    <li><a href="#">Second Link</a></li>
+                    <li><a href="#">Third Link</a></li>
+                    <li><a href="#">Fourth Link</a></li>
+                    <div class="navbar-button">
+                        <button class="no-bg">Sign Up</button>
+                        <button class="nrml">Sign In</button>
+                    </div>
+                </ul>
+            </div>
         </nav>
     </header>
+
+    <script src="index.js"></script>
 </body>
+
 </html>
